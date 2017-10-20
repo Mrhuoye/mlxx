@@ -15,7 +15,7 @@ __技术栈__
 ## 运行
 
 ```bash
-cd my-project
+$ cd my-project
 ```
 ```bash
 $ npm install       --加载依赖
