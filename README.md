@@ -18,9 +18,6 @@ __技术栈__
 cd my-project
 ```
 ```bash
-$ npm init          --创建package.json文件
-```
-```bash
 $ npm install       --加载依赖
 ```
 ```bash
