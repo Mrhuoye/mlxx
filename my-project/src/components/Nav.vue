@@ -16,8 +16,8 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    border-top: 1px solid #cccccc;
     background-color: white;
+    box-shadow: 0 -1px 4px #cccccc;
   }
 
   .container ul li {
