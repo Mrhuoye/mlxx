@@ -215,12 +215,6 @@
     created(){
       this.fetchData();
     },
-    mounted(){
-      var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        freeMode : true,
-      });
-    },
     methods:{
       changItem(index){
         if(index == 1){

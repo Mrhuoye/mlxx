@@ -378,13 +378,6 @@
     created(){
       this.fetchData();
     },
-    mounted(){
-      var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
-        pagination: '.swiper-pagination',
-      });
-    },
     methods: {
       buttonNav(index){
           if(index == 0){

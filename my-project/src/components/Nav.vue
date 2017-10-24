@@ -1,11 +1,11 @@
 <style scoped>
-  .container {
+  .container-nav {
     position: relative;
     width: 100%;
     overflow-x: hidden;
   }
 
-  .container ul {
+  .container-nav ul {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -20,25 +20,33 @@
     box-shadow: 0 -1px 4px #cccccc;
   }
 
-  .container ul li {
+  .container-nav ul li {
     list-style-type: none;
   }
 
-  .container ul li a p {
+  .container-nav ul li a p {
     margin-top: 8px;
     text-decoration: none;
     color: #7E7D7F;
     line-height: 0;
     font-size: 10px;
   }
-
   .font_active {
     color: #AE79FA;
   }
+  /* 路由动画 */
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active in below version 2.1.8 */ {
+    opacity: 0
+  }
 </style>
 <template>
-  <div class="container">
+  <div class="container-nav">
+    <transition name="fade">
     <router-view></router-view>
+    </transition>
     <ul>
       <li v-for="(value, index) in navData"
           @click="navChang(index)">
